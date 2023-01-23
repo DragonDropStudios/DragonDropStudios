@@ -1,0 +1,64 @@
+/* This is a comment */
+
+/* This section is for global styles */
+body {
+    font-family: Arial, sans-serif; /* This sets the font for the entire document */
+    background-color: #000000; /* This sets the background color */
+}
+
+/* This section is for heading styles */
+h1, h2, h3 {
+    color: #333; /* This sets the text color */
+    text-align: center; /* This centers the text */
+    font-family: 'MyFont';
+}
+
+/* This section is for paragraph styles */
+p {
+    line-height: 1.5; /* This sets the line height */
+    margin-bottom: 1em; /* This adds space below the paragraph */
+}
+
+/* This section is for link styles */
+a {
+    color: #1e90ff; /* This sets the link color */
+    text-decoration: none; /* This removes the underline */
+}
+
+/* This section is for button styles */
+button {
+    padding: 10px 20px; /* This sets the padding */
+    background-color: #1e90ff; /* This sets the background color */
+    color: #fff; /* This sets the text color */
+    border: none; /* This removes the border */
+    cursor: pointer; /* This changes the cursor on hover */
+}
+
+
+/* This section is for the text */
+.burn-effect {
+    color: #fff; /* This sets the text color */
+    animation: burn 1s ease-in-out; /* This sets the animation */
+}
+.burn-effect:hover {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff0000, 0 0 70px #ff0000, 0 0 80px #ff0000, 0 0 100px #ff0000, 0 0 150px #ff0000; /* This sets the text-shadow for the hover effect */
+    color: #000; /* This sets the color for the hover effect */
+}
+
+/* This section is for the animation keyframes */
+@keyframes burn {
+    0% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff0000, 0 0 70px #ff0000, 0 0 80px #ff0000, 0 0 100px #ff0000, 0 0 150px #ff0000; /* This sets the initial text-shadow */
+    }
+    100% {
+        text-shadow: none; /* This removes the text-shadow */
+        color: #000; /* This sets the final text color */
+    }
+}
+
+@font-face {
+    font-family: 'MyFont'; /* This sets the font-family name */
+    src: url('DarkGardenMK') format('tff'); /* This sets the font file path and format */
+    font-weight: normal; /* This sets the font weight */
+    font-style: normal; /* This sets the font style */
+}
